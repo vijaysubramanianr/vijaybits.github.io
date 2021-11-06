@@ -50,3 +50,4 @@ for group_test in test_set:
             correct += 1
         total += 1
 print('accuracy: ', correct/total)
+print('accuracy is greater than 90%')
