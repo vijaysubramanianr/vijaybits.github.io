@@ -4,6 +4,7 @@ import pandas as pd
 
 df1 = pd.read_csv('breast-cancer-wisconsin.data')
 df1.replace('?', -99999, inplace=True)
+df1.replace(Nan, 000, inplace=True)
 '''
 id,clump_thickness,uniform_cell_size,
 uniform_cell_shape,marginal_adhesion,
