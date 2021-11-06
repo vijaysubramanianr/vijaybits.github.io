@@ -28,7 +28,7 @@ df.drop(['id'], 1, inplace=True)
 full_data = df.astype(float).values.tolist()
 random.shuffle(full_data)
 
-test_size = 0.2
+test_size = 0.4
 train_set = {2:[], 4:[]}
 test_set = {2:[], 4:[]}
 train_data = full_data[:-int(test_size*len(full_data))]
