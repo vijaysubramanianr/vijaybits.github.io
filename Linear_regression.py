@@ -20,7 +20,7 @@ df1 = df1[['Adj. Close', 'HL_PCT', 'PCT_CHANGE', 'Adj. Volume']]
 forecast_col = 'Adj. Close'
 df1.fillna(-9999, inplace = True)
 
-forecast_out = int(math.ceil(0.02 * len(df1)))
+forecast_out = int(math.ceil(0.03 * len(df1)))
 df1['Label'] = df1[forecast_col].shift(-forecast_out)
 
 #Deciding features and Labels
