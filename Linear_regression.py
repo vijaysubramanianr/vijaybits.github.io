@@ -7,6 +7,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 import matplotlib.pyplot as plt
 from matplotlib import style
+import os
 
 #Getting the Dataframe
 df1 = quandl.get("WIKI/GOOGL")
